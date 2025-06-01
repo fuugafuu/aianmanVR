@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone専用VRカメラマップ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-container">
+    <video id="leftCam" autoplay playsinline muted></video>
+    <video id="rightCam" autoplay playsinline muted></video>
+  </div>
+  <canvas id="overlay"></canvas>
+  <div class="overlay-text" id="statusText">起動中…</div>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="script.js"></script>
+</body>
+</html>
