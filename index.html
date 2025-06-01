@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Vision カメラ分析サイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-container">
+    <video id="camera" autoplay playsinline muted></video>
+  </div>
+  <canvas id="faceOverlay"></canvas>
+  <div class="overlay-text" id="statusText">起動中…</div>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/face_detection.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
